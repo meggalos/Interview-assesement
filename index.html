@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/css/all.css" />
+  </head>
+  <body>
+    <main>
+        <div class="topper">
+            <p>Pro Cleaners</p>
+            <p>Phone-08089008822</p>
+        </div>
+      <section class="hero">
+        <div class="hero_left">
+          <h1>Vancouver's Best <br />Home Cleaners</h1>
+          <p>
+            Pro Cleaning is Vancouver's best Cleaning services.For the quality
+            maid service Vancouver relies on, book one of our experienced,
+            background-checked professionals to have your home clean in no time.
+          </p>
+        </div>
+
+        <div class="hero_right">
+          <h2 >Request Info & Booking</h2>
+          <p>Fill this form and we'll contact you as soon as we can</p>
+          <form action="#" class="hero_form" id="submit">
+          <input type="text" id="name" placeholder="Your name" />
+          <input type="email" id="email" placeholder="Your Email" />
+          <input type="tel" id="phone" placeholder="Your Phone" />
+          <button type="submit">Request info & Booking</button>
+        </form>
+        </div>
+      </section>
+
+      <section class="offer">
+        <div class="offer_in">
+          <i class="fas fa-user circle-icon"></i>
+          <h3>Trusted professionals</h3>
+          <p class="offer_text">
+            Our professionals are experiences,
+            <br />
+            friendly, and background-checked
+          </p>
+        </div>
+        <!-- second -->
+        <div class="offer_in">
+          <i class="fas fa-calendar circle-icon"></i>
+          <h3>Available Everyday</h3>
+          <p class="offer_text">
+            We're available to serve you 7 days per
+            <br />
+            weeks, We'll work around your schedule
+          </p>
+        </div>
+
+        <!-- third -->
+        <div class="offer_in">
+          <i class="fas fa-dollar-sign circle-icon"></i>
+          <h3>100% Money-Back Guarantee</h3>
+          <p class="offer_text">
+            If you're not satisfied, we'll refund all of your <br />
+            money, it's as simple as that.
+          </p>
+        </div>
+      </section>
+
+      <section class="testimony">
+        <h2>What Our Clients Says</h2>
+        <div class="testimony_wrapper">
+          <div class="testimony_client">
+            <img src="constumer.jpeg" alt="" class="circle-icon_image" />
+            <p class="testimony_client_name">Paulo Parra</p>
+            <div style="height: 1.3px; width: 100%; background-color: #ccc;"></div>
+
+            <!-- <hr /> -->
+            <p class="testimony_word">
+              The team was fast and friendly-honestly my <br/> house hasn't been this
+              clean in years!
+            </p>
+            <div class="rate">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+          </div>
+
+          <!-- second testimony -->
+          <div class="testimony_client">
+            <img src="customer2.jpeg" alt="" class="circle-icon_image " />
+            <p class="testimony_client_name">Anna  Carolina</p>
+            <!-- <hr style="background-color: aquamarine;"/> -->
+            <div style="height: 1.3px; width: 100%; background-color: #ccc;"></div>
+            <p class="testimony_word">
+             It feels do great walking in to a fresh, clean <br/> apartment every day.These guys make my place spotless
+            </p>
+            <div class="rate">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy;. All Rights Reserved</footer>
+    <script>
+      let name = document.getElementById("name");
+      let email = document.getElementById("email");
+      let phone = document.getElementById("phone");
+
+      let submit = document.getElementById("submit");
+
+      submit.addEventListener("submit", (e) => {
+      alert(`Your name is ${name.value} and email ${email.value} and phone number ${phone.value}`);
+      });
+
+    </script>
+  </body>
+</html>
